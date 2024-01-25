@@ -41,3 +41,8 @@ my_cur.execute("SELECT * from fruit_load_list")
 my_data_row = my_cur.fetchone()
 streamlit.text("Fruit list contains:")
 streamlit.text(my_data_row)
+
+#second text box
+streamlit.header('Trying a second text box!')
+fruit_interest = streamlit.text_input('What fruit would you like to add now?','Banana?')
+streamlit.write('The user entered ', fruit_interest)
