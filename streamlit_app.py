@@ -45,7 +45,7 @@ streamlit.write('The user entered ', fruit_choice)
 
 #let's make this pretty and normalized
 
-streamlit.stop()
+
 
 streamlit.header("The fruit load list contains:")
 #Snowflake-related functions
@@ -67,6 +67,7 @@ if streamlit.button('Get Fruit Load List'):
 ###streamlit.text("Hello from Snowflake:")
 ###streamlit.text(my_data_row)
 
+streamlit.stop()
 my_cur.execute("SELECT * from fruit_load_list")
 my_data_row = my_cur.fetchone()
 streamlit.text("Fruit list contains:")
