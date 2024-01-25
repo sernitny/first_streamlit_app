@@ -45,4 +45,4 @@ streamlit.text(my_data_row)
 #second text box
 streamlit.header('Trying a second text box!')
 fruit_interest = streamlit.text_input('What fruit would you like to add now?','Banana?')
-streamlit.write('The user entered ', fruit_interest)
+streamlit.write('The user is intersted in ', fruit_interest)
